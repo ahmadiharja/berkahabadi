@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/assets/(.*)", "dest": "/assets/$1", "continue": true },
+    { "src": "/(.*)\\.png", "dest": "/$1.png" },
+    { "src": "/(.*)\\.ico", "dest": "/$1.ico" },
+    { "src": "/(.*)\\.jpg", "dest": "/$1.jpg" },
+    { "src": "/(.*)\\.jpeg", "dest": "/$1.jpeg" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
